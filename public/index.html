@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>XOX</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="login-screen" class="screen">
+  <h1>Hoşgeldin!</h1>
+  <input type="text" id="username" placeholder="İsminizi girin (İsteğe bağlı)" />
+  <div class="buttons">
+    <button id="btn-join">İsminle Gir</button>
+    <button id="btn-skip">Atla</button>
+  </div>
+  <p>Oyuncu isimleri otomatik atanacak.</p>
+</div>
+
+<div id="game-screen" class="screen hidden">
+  <h1 class="title">XOX</h1>
+  <div id="players"></div>
+  <div id="board"></div>
+  <div id="turn"></div>
+  <button id="btn-restart" class="hidden">Yeniden Başlat</button>
+  <div id="qr-code"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+s
